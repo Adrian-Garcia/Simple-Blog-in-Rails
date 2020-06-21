@@ -1,0 +1,18 @@
+How to Rails
+	
+	Model
+	
+		Create model
+			$ rails g model ModelNameInSingular title:string body:text
+
+		Migrate
+			$ rake db:migrate
+
+		If you have any realationship between models (check this step later)
+			$ rake routes
+
+	Controller
+	
+		Create controller
+			$ rails g controller Comments
+

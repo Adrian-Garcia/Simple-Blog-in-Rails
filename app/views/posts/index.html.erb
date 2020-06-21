@@ -1,0 +1,13 @@
+<h1>Blog Posts</h1>
+
+<br>
+<% @posts.each do |post| %>
+	
+	<div class="well" style="margin-bottom: 5%;">
+
+		<h3><%= post.title %></h3>
+		<p><%= post.body %></p>
+	
+		<%= link_to "Read mode", post_path(post), :class => 'btn btn-dark' %>
+	</div>
+<% end %>	
